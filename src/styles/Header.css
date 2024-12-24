@@ -86,7 +86,7 @@
   text-decoration: none;
   font-size: var(--font-size-base);
   color: var(--grey);
-  font-weight: var(--font-weight-bold);
+  font-weight: var(--font-weight-regular);
 }
 
 .nav-links a:hover {

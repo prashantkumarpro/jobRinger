@@ -34,7 +34,16 @@
   color: var(--some-dark-blue);
 }
 
+.job-company {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
 .job-info p {
+  display: flex;
+  align-items: center;
+  gap: 5px;
   font-size: var(--font-size-small);
   color: var(--grey-dark);
   margin: var(--spacing-medium) 0;
@@ -59,6 +68,18 @@
   color: var(--primary-yellow);
   transition: all 1.5s ease-out;
   transition: all 1.5s ease-in;
+}
+
+@media (max-width:1024px) {
+  .job-card {
+    position: relative;
+    max-width: 200px;
+    background-color: #FFFFFF;
+    border: 1px solid #D3D3CF;
+    border-radius: var(--border-radius);
+    padding: var(--spacing-medium);
+    z-index: 2;
+  }
 }
 
 @media (max-width:768px) {

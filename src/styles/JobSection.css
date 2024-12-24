@@ -35,15 +35,15 @@
 }
 
 .custom-next {
-  right: 10px;
+  right: -12px;
 }
 
 .custom-arrow:hover {
   color: darkblue;
 }
 
-@media (max-width:768px) {
+@media (max-width:1024px) {
   .custom-next {
-    right: -30px;
+    right: -28px;
   }
 }

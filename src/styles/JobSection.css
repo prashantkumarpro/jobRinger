@@ -1,0 +1,49 @@
+@import '../styles/variables.css';
+
+.job-cards-container {
+  padding: 20px;
+}
+
+.section-title {
+  color: var(--some-dark-blue);
+  margin: var(--spacing-medium)  var(--spacing-small);
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+/* Hide slick's default arrows */
+.slick-prev,
+.slick-next {
+  display: none !important;
+}
+
+/* Style your custom arrows */
+.custom-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1000;
+  cursor: pointer;
+  font-size: 44px;
+  color: blue;
+  background-color: transparent;
+  z-index: inherit;
+}
+
+.custom-prev {
+  left: -30px;
+}
+
+.custom-next {
+  right: 10px;
+}
+
+.custom-arrow:hover {
+  color: darkblue;
+}
+
+@media (max-width:768px) {
+  .custom-next {
+    right: -30px;
+  }
+}

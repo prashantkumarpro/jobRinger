@@ -1,0 +1,162 @@
+.footer {
+  width: 100%;
+  background-color: #E8F5F5;
+  margin-top: -35px;
+}
+
+/* Jobs Section */
+.jobs-section {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  gap: 20px;
+  border-bottom: 2px solid #0073ff;
+}
+
+.jobs-category {
+  width: 50%;
+  background: #b8f2f238, no-repeat center url('../assets/city-job-bg.jpg');
+  padding: 20px;
+  background-blend-mode: overlay;
+  border-right: 6px solid #fff;
+}
+
+.jobs-category {
+  border-right: 6px solid #fff;
+}
+
+.jobs-category h3 {
+  color: #000;
+  font-weight: bold;
+  text-align: center;
+}
+
+.jobs-category p {
+  color: #444;
+  font-size: var(--font-size-small);
+  margin: var(--spacing-medium) 0;
+  word-spacing: var(--spacing-medium);
+  text-align: justify;
+  line-height: 30px;
+
+}
+
+/* Stats Section */
+.stats {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+  border-bottom: 2px solid #0073ff;
+}
+
+.stats div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.stats h4 {
+  text-align: center;
+  margin: 10px 0;
+  color: #666;
+  font-size: 16px;
+}
+
+.stats .number {
+  font-size: 40px;
+  color: #0023B5;
+  font-weight: bold;
+}
+
+/* Disclaimer */
+.disclaimer {
+  text-align: justify;
+  font-size: 14px;
+  color: #666;
+  padding: 20px 20px;
+  line-height: 1.5;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+
+}
+
+/* Footer Links */
+.footer-links {
+  margin: 20px 0;
+  font-size: 13px;
+  color: #444;
+  text-align: center;
+  line-height: 25px;
+  word-spacing: 2px;
+  letter-spacing: 1.2px;
+}
+
+.footer-links p:nth-of-type(1) {
+  margin-top: -15px;
+  border-top: 2px solid #0073ff;
+  padding-top: 20px;
+}
+
+
+
+.recognized {
+  text-align: right;
+  font-weight: bold;
+  color: #e78b00;
+}
+
+@media (max-width:768px) {
+  .jobs-section {
+    flex-direction: column;
+  }
+
+  .jobs-section .jobs-category {
+    width: 100%;
+    border-right: none;
+
+  }
+
+  .jobs-category:nth-of-type(1) {
+    border-bottom: 6px solid #fff;
+  }
+
+  /* Stats Section */
+  .stats {
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 0;
+    border-bottom: 2px solid #0073ff;
+  }
+
+
+  .stats .number {
+    font-size: 24px;
+    letter-spacing: 5px;
+    font-weight: 800;
+  }
+
+}
+
+@media (max-width:500px) {
+  .stats h4 {
+    text-align: center;
+    margin: 10px 0;
+    color: #666;
+    font-size: 14px;
+  }
+
+  .stats .number {
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 800;
+  }
+
+  .social {
+    padding: 10px 0px;
+  }
+}

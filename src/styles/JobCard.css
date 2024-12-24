@@ -1,0 +1,76 @@
+@import '../styles/variables.css';
+
+.job-card {
+  position: relative;
+  max-width: 300px;
+  background-color: #FFFFFF;
+  border: 1px solid #D3D3CF;
+  border-radius: var(--border-radius);
+  padding: var(--spacing-medium);
+  z-index: 2;
+}
+
+
+.job-type {
+  position: absolute;
+  background-color: var(--primary-yellow);
+  color: var(--grey);
+  font-size: 12px;
+  padding: 0.35rem 0.95rem;
+  border-radius: var(--border-radius);
+  display: inline-block;
+  margin-bottom: var(--spacing-small);
+  top: 0;
+  right: 0;
+  border-bottom-left-radius: 50px;
+  font-weight: var(--font-weight-bold);
+  z-index: 1;
+}
+
+.job-title {
+  font-size: var(--font-size-small);
+  color: var(--primary-blue);
+  margin: var(--spacing-large) 0;
+  color: var(--some-dark-blue);
+}
+
+.job-info p {
+  font-size: var(--font-size-small);
+  color: var(--grey-dark);
+  margin: var(--spacing-medium) 0;
+}
+
+
+
+.btn-apply {
+  width: 100%;
+  background-color: var(--light-blue);
+  color: var(--white);
+  padding: var(--spacing-small) var(--spacing-medium);
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-size: var(--font-size-medium);
+  transition: background-color 0.3s ease;
+  font-weight: var(--font-weight-bold);
+}
+
+.btn-apply:hover {
+  color: var(--primary-yellow);
+  transition: all 1.5s ease-out;
+  transition: all 1.5s ease-in;
+}
+
+@media (max-width:768px) {
+  .job-card {
+    position: relative;
+    max-width: none;
+    width: 100%;
+    background-color: #FFFFFF;
+    border: 1px solid #D3D3CF;
+    border-radius: var(--border-radius);
+    padding: var(--spacing-medium);
+    z-index: 2;
+  }
+
+}

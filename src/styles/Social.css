@@ -1,0 +1,41 @@
+/* Social Media */
+.social {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.social-icons span {
+  margin-right: 10px;
+  font-weight: bold;
+
+}
+
+.social-icons i {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5px;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #323E6B;
+  width: 34px;
+  height: 34px;
+  border-radius: 50px;
+  align-items: center;
+  color: #fff;
+}
+
+.social-icons i:hover {
+  color: #DCBB36;
+}
+
+@media (max-width:1024px) {
+  .social {
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+    margin-bottom: 2px;
+  }
+}

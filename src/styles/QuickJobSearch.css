@@ -1,0 +1,206 @@
+@import '../styles/variables.css';
+
+/* Section styling */
+.quick-job-search {
+    padding: 0 var(--spacing-medium);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.boxes {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: center;
+}
+
+.left,
+.job-categories {
+    background-color: var(--primary-blue-light);
+    width: 50%;
+    height: 160px;
+    padding: 10px;
+    border-radius: var(--radius-medium);
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.job-categories h2{
+    text-align: center;
+    color: var(--dark-blue);
+}
+.job-categories .text{
+  display: flex;
+  align-items: start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-right:20px;
+  gap: 15px;
+}
+.job-categories .text span{
+   font-size: 12px;
+   color: var(--white);
+}
+
+/* Header styling */
+.search-header h2 {
+    color: var(--dark-blue);
+    font-size: var(--font-size-large);
+    margin-top: var(--spacing-medium);
+    font-weight: var(--font-weight-bold);
+}
+
+.search-header p {
+    font-size: var(--font-size-medium);
+    color: var(--dark-blue);
+    margin-bottom: var(--spacing-medium);
+    font-weight: var(--font-weight-bold);
+    /* margin-top: var(--spacing-small); */
+}
+
+/* Search bar container */
+.search-bar-container {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: var(--spacing-small);
+}
+
+.search-input {
+    width: 100%;
+    max-width: 500px;
+    padding: var(--spacing-small);
+    font-size: var(--font-size-base);
+    border: 1px solid var(--grey-light);
+    border-radius: var(--border-radius);
+    border: none;
+    outline: none;
+}
+
+.left_part2 {
+    margin-top: var(--spacing-small);
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.btn {
+    padding: var(--spacing-small) var(--spacing-medium);
+    border: none;
+    border-radius: var(--border-radius);
+    font-size: var(--font-size-small);
+    font-weight: var(--font-weight-bold);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: var(--spacing-small);
+}
+
+/* Button styles */
+.btn-search {
+    background-color: var(--primary-yellow);
+    color: black;
+}
+
+.btn-search:hover {
+    color: var(--grey);
+}
+
+.btn-view-jobs {
+    background-color: var(--white);
+    color: var(--grey);
+}
+
+
+
+.btn-register {
+    background-color: var(--primary-yellow);
+    color: var(--grey);
+}
+
+.btn-register:hover {
+    color: var(--white);
+}
+
+/* Job categories */
+.job-categories h3 {
+    color: var(--dark-blue);
+    margin: var(--spacing-small) 0 var(--spacing-small);
+    font-size: var(--font-size-large);
+    text-align: center;
+}
+
+.job-categories p {
+    color: var(--light-grey);
+    font-size: var(--font-size-small);
+    margin: var(--spacing-medium) 0;
+    word-spacing: var(--spacing-medium);
+    text-align: justify;
+    color: var(--white);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .quick-job-search {
+        padding: 0;
+    }
+    
+    .search-input {
+        width: 90%;
+    }
+
+   
+
+    .boxes {
+        flex-direction: column;
+    }
+    .boxes .left{
+       width: 100%;
+       height: auto;
+       padding: 20px 10px;
+       gap: 10px;
+       display: flex;
+    }
+    .boxes .job-categories {
+       width: 100%;
+       height: auto;
+       
+    }
+    .boxes .job-categories p {
+       width: 100%;
+       word-spacing: 20px;
+       
+    }
+    .search-bar-container{
+        flex-direction: none;
+        justify-content: start;
+        
+    }
+    .search-bar-container input{
+        width: 100%;
+        max-width: none;
+    }
+}
+@media (max-width: 600px) {
+   
+    .boxes .job-categories p {
+       word-spacing: 10px;
+       
+    }
+    .search-bar-container{
+        flex-direction: none;
+        justify-content: start;
+        
+    }
+    .search-bar-container input{
+        width: 100%;
+        max-width: none;
+    }
+}

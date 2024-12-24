@@ -1,0 +1,118 @@
+@import '../styles/variables.css';
+
+.employee-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: linear-gradient(125deg, #27dadb 0, #001b85 100%);
+    border-radius: var(--radius-medium);
+    margin-top: 4rem;
+    padding: var(--spacing-small);
+}
+
+.titile1,
+.welcome-text {
+    color: var(--white);
+    margin-left: var(--spacing-medium);
+}
+
+.textholder .text-anim {
+    margin-left: var(--spacing-medium);
+    color:#fff;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(90deg, #ffd52c 0, #ffea95 25%, #fff 50%, #ffea95 75%, #ffd52c 100%);
+    animation: 150s linear infinite text-animation;
+}
+
+@keyframes text-animation {
+    to {
+        background-position: 4500vh;
+    }
+}
+
+.titile1 {
+    font-size: var(--font-size-large);
+    text-transform: uppercase;
+}
+
+.btn-log {
+    margin-left: var(--spacing-small);
+    padding: var(--spacing-small) var(--spacing-medium);
+    font-size: var(--font-size-small);
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+}
+
+.btn-log .yellow-btn,
+.purple-btn,
+.salesbtn1 {
+    border-radius: var(--radius-small);
+    padding: var(--spacing-small) var(--spacing-medium);
+    border: none;
+    font-weight: var(--font-weight-bold);
+}
+
+.yellow-btn {
+    background-color: var(--highlight-yellow);
+    color: var(--grey);
+}
+
+.purple-btn {
+    background-color: white;
+    border: 0.5px solid #ddd;
+    outline: none;
+    font-weight: var(--font-weight-bold);
+    color: var(--grey);
+}
+
+.salesbtn1 {
+    text-decoration: underline;
+}
+
+.salesbtn1:hover {
+    text-decoration: none;
+    color: var(--secondry-blue);
+}
+
+.yellow-btn:hover {
+    color: var(--white);
+}
+
+@media (max-width:768px) {
+    .textholder {
+        display: none;
+    }
+}
+
+@media (max-width:500px) {
+
+    .quick-job-search .search-header h2 {
+        font-size: var(--font-size-medium);
+    }
+
+    .btn-log {
+        flex-wrap: wrap;
+        justify-content: start;
+        gap: 0px;
+        margin-left: 0;
+        padding: 8px var(--spacing-medium);
+
+    }
+
+    .purple-btn {
+        margin-left: 10px;
+    }
+
+    .salesbtn1 {
+        padding: 10px 2px;
+    }
+}
